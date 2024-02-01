@@ -1,0 +1,28 @@
+.top-bar {
+  padding-top: 30px;
+  padding-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo-link {
+    text-decoration: none;
+  }
+
+  &__logo {
+    width: 161px;
+  }
+
+  @include on-tablet {
+    padding-bottom: 64px;
+  }
+
+  &__close-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-image: url('../images/icons/close-icon.png');
+    background-size: cover;
+  }
+
+}

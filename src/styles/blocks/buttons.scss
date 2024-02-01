@@ -1,0 +1,80 @@
+.buttons {
+  height: min-content;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  &__btn {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: $text-color-dark;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-btn-hover-color;
+      font-weight: 700;
+    }
+
+    &--active {
+      font-weight: 400;
+      color: $title-color;
+    }
+
+    &--top-bar {
+      display: none;
+
+
+      @include on-tablet {
+        display: block;
+      }
+
+      @include on-desktop {
+        display: block;
+      }
+    }
+
+    &--side-nav {
+      display: block;
+
+
+
+
+      @include on-tablet {
+        display: none;
+      }
+
+      @include on-desktop {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      width: 100%;
+      margin-bottom: 30px;
+
+      @include on-tablet {
+        display: none;
+      }
+
+      @include on-desktop {
+        display: none;
+      }
+    }
+
+    &--menu {
+      width: 32px;
+      height: 32px;
+      background-image: url('../images/icons/burger-menu.png');
+      background-size: cover;
+
+      @include on-desktop {
+        display: none;
+      }
+
+    }
+  }
+}
+

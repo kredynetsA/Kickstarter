@@ -1,0 +1,75 @@
+ body, html, header, img, a, div,
+ section, article, h1, p, aside,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  font-family: Inter, sans-serif;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+    min-width: 320px;
+
+    &:has(.page__menu:target) {
+      overflow: hidden;
+    }
+  }
+
+  &__menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    transform: translateX(-100%);
+    background-color: $background-color;
+
+    &:target {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateX(0%);
+    }
+  }
+}
+
+
+
+
+
+
+.button-primary {
+  width: 102px;
+  height: 48px;
+  text-align: center;
+  background: #333;
+  border: none;
+  cursor: pointer;
+
+  &__link {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    background: inherit;
+  }
+
+  &:hover {
+    background: $primary-btn-hover-color;
+  }
+
+  &--disabled {
+    background: $primary-btn-disabled-color;
+  }
+}

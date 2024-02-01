@@ -1,13 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Kickstarter</title>
+    <link
+      rel="icon"
+      type="images/x-icon"
+      href="images/favicon.svg"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="top-bar">
+          <a class="top-bar__logo-link" href="#">
+            <img class="top-bar__logo"
+              src="images/logo.png"
+              alt="Crazy Baby Logo"
+            >
+          </a>
+
+          <div class="top-bar__btn buttons">
+            <a class="buttons__btn buttons__btn--top-bar" href="#">specs</a>
+            <a class="buttons__btn buttons__btn--top-bar" href="#">
+              <span class="buttons__btn buttons__btn--active ">en </span> / <span class="buttons__btn">ua </span>
+            </a>
+
+            <button class="button-primary buttons__btn buttons__btn--top-bar">
+              <a class="button-primary__link">buy</a>
+            </button>
+
+            <a href="#menu" class="buttons__btn buttons__btn--menu"></a>
+          </div>
+        </div>
+
+        <div class="header__content">
+          <img class="header__img"
+            src="./images/home-bg.png"
+            alt="futuristic wireless speaker"
+          >
+
+          <article class="header__article">
+            <h1 class="header__title">
+              Futuristics
+              <br>
+              Wireless
+              <br>
+              Speaker
+            </h1>
+            <p class="header__desc">Luna’s performance is balanced and smooth in all frequency ranges which makes the music both naturally pleasant and distinctly more layered.</p>
+          </article>
+        </div>
+      </div>
+    </header>
+
+    <aside class="menu page__menu" id="menu">
+      <div class="container menu__container">
+        <div>
+          <div class="top-bar">
+            <a class="top-bar__logo-link" href="#">
+              <img class="top-bar__logo"
+                src="images/logo.png"
+                alt="Crazy Baby Logo"
+              >
+            </a>
+
+            <a class="top-bar__close-icon" href="#"></a>
+          </div>
+          <nav class="nav">
+            <a class="nav__link" href="#">OUR STORY</a>
+            <a class="nav__link" href="#">ABOUT US</a>
+            <a class="nav__link" href="#">FEATURES</a>
+            <a class="nav__link" href="#">GET IN TOUCH</a>
+          </nav>
+
+          <div class="nav__buttons buttons">
+            <a class="buttons__btn buttons__btn--side-nav" href="#">specs</a>
+            <a class="buttons__btn buttons__btn--side-nav" href="#">
+              <span class="buttons__btn buttons__btn--active ">en </span> / <span class="buttons__btn">ua </span>
+            </a>
+          </div>
+        </div>
+        <button class="button-primary buttons__btn buttons__btn--mobile">
+          <a class="button-primary__link">buy</a>
+        </button>
+      </div>
+
+    </aside>
+
+    <nav class="nav nav--desktop">
+      <a class="nav__link">OUR STORY</a>
+      <a class="nav__link">ABOUT US</a>
+      <a class="nav__link">FEATURES</a>
+      <a class="nav__link">GET IN TOUCH</a>
+    </nav>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__content">
+          <section class="benefits" id="benefits">
+            <article class="benefit">
+              <img class="benefit__icon" src="./images/icons/futuristic.png"
+                alt="Futuristic Design"
+              >
+              <h2 class="benefit__title">Futuristic Design</h2>
+              <p class="benefit__desc">
+                To give Luna a truly flawless look, we specifically picked aircraft grade aluminum as its material and adopted both three-dimensional stretch-bending technology and a high precision cold forging technique.
+              </p>
+            </article>
+
+            <article class="benefit">
+              <img class="benefit__icon" src="./images/icons/sound-icon.png"
+                alt="Tweeter Speaker System"
+              >
+              <h2 class="benefit__title">Tweeter Speaker System</h2>
+              <p class="benefit__desc">
+                To deliver a more layered sound performance better than a sole full-range speaker, our team equipped Luna with one more tweeter speaker responsible for high-frequency sound independently.
+              </p>
+            </article>
+
+            <article class="benefit">
+              <img class="benefit__icon" src="./images/icons/wifi-icon.png"
+                alt="Multiroom System"
+              >
+              <h2 class="benefit__title">Multiroom System</h2>
+              <p class="benefit__desc">
+                Luna is natively compatible with your home Wi-Fi. Set up multiple speakers in different rooms to expand your music experience into the entire house.
+              </p>
+            </article>
+
+            <article class="benefit">
+              <img class="benefit__icon" src="./images/icons/sun-icon.png"
+                alt="Intuitive Lighting System"
+              >
+              <h2 class="benefit__title">Intuitive Lighting System</h2>
+              <p class="benefit__desc">
+                An intuitive user interface allows you to adjust the hue and saturation of color for lighting that fits any mood and situation.
+              </p>
+            </article>
+          </section>
+
+          <section class="presentation" id="presentation">
+            <div class="presentation__img"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
